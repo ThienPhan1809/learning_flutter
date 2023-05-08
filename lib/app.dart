@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_bloc/routes/routes.dart';
 
 import 'homepage/views/homepage.dart';
 
@@ -16,6 +17,7 @@ class _MainAppState extends State<MainApp> {
       debugShowCheckedModeBanner: false,
       title: 'BloCApp',
       home: Homepage(),
+      onGenerateRoute: generateRoute,
     );
   }
 }
