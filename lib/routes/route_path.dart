@@ -4,9 +4,12 @@ class RoutePath {
   /// Renders [HomePage]
   static const String home = '/';
 
-  ///splash screen
+  /// Counter screen
   static const String counter = '/counter';
 
-  ///not found
+  /// Timer screen
+  static const String timer = '/timer';
+
+  /// Not found
   static const String notFound = '/404';
 }

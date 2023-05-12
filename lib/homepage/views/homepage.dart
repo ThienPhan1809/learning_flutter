@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:test_bloc/routes/route_path.dart';
 
-import '../../counter/views/counter_page.dart';
 import 'button_custom.dart';
 
 class Homepage extends StatelessWidget {
@@ -17,16 +17,15 @@ class Homepage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             CustomButton(
-              text: 'CountPage',
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const CounterPage(),
-                  ),
-                );
-              },
-            )
+                text: 'CountPage',
+                onTap: () {
+                  Navigator.pushNamed(context, RoutePath.counter);
+                }),
+            CustomButton(
+                text: 'TimerPage',
+                onTap: () {
+                  Navigator.pushNamed(context, RoutePath.timer);
+                })
           ],
         ),
       ),
